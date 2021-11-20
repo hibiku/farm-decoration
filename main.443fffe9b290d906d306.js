@@ -2636,7 +2636,7 @@ const _tmpl$ = (0,web/* template */.XK)(`<div><div class="grid-legend-item road-
       _tmpl$9 = (0,web/* template */.XK)(`<tr><td>Building</td><td></td><td></td></tr>`, 8),
       _tmpl$10 = (0,web/* template */.XK)(`<tr><td>Decor</td><td></td><td></td></tr>`, 8),
       _tmpl$11 = (0,web/* template */.XK)(`<div class="example"><p><b>Example:</b> Consider the minimal layouts below that consist entirely of <b>Cannon</b> decors.</p><p>In <b></b>, roads are positioned too closely together. This layout can be improved by using decors to remove some of the paths that run vertically, as shown in <b></b> and <b></b>.</p><p>In <b></b>, roads that form the remaining vertical path (and which connect the horizontal paths) are hoisted out to reduce the number of connections available to those roads. With this adjustment, each road is connected to at most <b>2</b> other roads, the minimum necessary for any set of roads to stay connected to each other (and to the network).</p><p>(For easier comparison, <b>Cannon</b> decors are padded to the end of <b></b> and <b></b> to match the count in <b></b>. The number of roads used in each layout is the same.)</p><div class="gallery"></div></div>`, 34),
-      _tmpl$12 = (0,web/* template */.XK)(`<div class="example"><p><b>Example:</b> Consider the minimal layouts below that consist entirely of <b>Tip-Top Balloon Shop</b> buildings, which have a base production rate of <b>35</b> Waru per 10 mins, and receive an <em>average</em> production rate bonus of <b>5</b> Waru per 10 mins for each neighboring road.</p><p>In <b></b> and <b></b>, roads are underutilized. These layouts can be improved by positioning buildings further apart from each other, as shown in <b></b>, <b></b> and <b></b>.</p><p>In <b></b>, <b></b> and <b></b>, roads are overutilized. These layouts can be improved by positioning buildings closer to each other, as shown in <b></b>. In particular, <b></b> shows how using roads in excess can make production rates worse compared to not using roads at all.</p><div class="gallery"></div></div>`, 40),
+      _tmpl$12 = (0,web/* template */.XK)(`<div class="example"><p><b>Example:</b> Consider the minimal layouts below that consist entirely of <b>Tip-Top Balloon Shop</b> buildings, which have a base production rate of <b>35</b> Waru per 10 mins. While these buildings can be neighbored by up to <b>12</b> roads, they receive production rate bonuses only up to <b>7</b> neighboring roads, and in the following amounts:</p><ol><li><b>5</b> Waru per 10 mins for the <b>first</b> neighboring road</li><li><b>6</b> Waru per 10 mins for the <b>second</b> neighboring road</li><li><b>6</b> Waru per 10 mins for the <b>third</b> neighboring road</li><li><b>5</b> Waru per 10 mins for the <b>fourth</b> neighboring road</li><li><b>6</b> Waru per 10 mins for the <b>fifth</b> neighboring road</li><li><b>6</b> Waru per 10 mins for the <b>sixth</b> neighboring road</li><li><b>1</b> Waru per 10 mins for the <b>seventh</b> neighboring road</li></ol><p>In <b></b> and <b></b>, roads are underutilized. These layouts can be improved by positioning buildings further apart from each other, as shown in <b></b>, <b></b> and <b></b>.</p><p>In <b></b>, <b></b> and <b></b>, roads are overutilized. These layouts can be improved by positioning buildings closer to each other, as shown in <b></b>. In particular, <b></b> shows how using roads in excess can make production rates worse compared to not using roads at all.</p><div class="gallery"></div></div>`, 84),
       _tmpl$13 = (0,web/* template */.XK)(`<h2>Practical layouts</h2>`, 2),
       _tmpl$14 = (0,web/* template */.XK)(`<p>Below are some grid layouts that have been optimized for Waru production in different scenarios.</p>`, 2),
       _tmpl$15 = (0,web/* template */.XK)(`<div class="gallery"></div>`, 2),
@@ -3374,8 +3374,8 @@ function Gallery_2() {
     var _el$96 = _tmpl$12.cloneNode(true),
         _el$97 = _el$96.firstChild,
         _el$98 = _el$97.nextSibling,
-        _el$99 = _el$98.firstChild,
-        _el$100 = _el$99.nextSibling,
+        _el$99 = _el$98.nextSibling,
+        _el$100 = _el$99.firstChild,
         _el$101 = _el$100.nextSibling,
         _el$102 = _el$101.nextSibling,
         _el$103 = _el$102.nextSibling,
@@ -3384,9 +3384,9 @@ function Gallery_2() {
         _el$106 = _el$105.nextSibling,
         _el$107 = _el$106.nextSibling,
         _el$108 = _el$107.nextSibling,
-        _el$109 = _el$98.nextSibling,
-        _el$110 = _el$109.firstChild,
-        _el$111 = _el$110.nextSibling,
+        _el$109 = _el$108.nextSibling,
+        _el$110 = _el$99.nextSibling,
+        _el$111 = _el$110.firstChild,
         _el$112 = _el$111.nextSibling,
         _el$113 = _el$112.nextSibling,
         _el$114 = _el$113.nextSibling,
@@ -3395,49 +3395,50 @@ function Gallery_2() {
         _el$117 = _el$116.nextSibling,
         _el$118 = _el$117.nextSibling,
         _el$119 = _el$118.nextSibling,
-        _el$120 = _el$109.nextSibling;
+        _el$120 = _el$119.nextSibling,
+        _el$121 = _el$110.nextSibling;
 
-    (0,web/* insert */.$T)(_el$100, function () {
+    (0,web/* insert */.$T)(_el$101, function () {
       return presets[0].title;
     });
 
-    (0,web/* insert */.$T)(_el$102, function () {
+    (0,web/* insert */.$T)(_el$103, function () {
       return presets[1].title;
     });
 
-    (0,web/* insert */.$T)(_el$104, function () {
+    (0,web/* insert */.$T)(_el$105, function () {
       return presets[2].title;
     });
 
-    (0,web/* insert */.$T)(_el$106, function () {
+    (0,web/* insert */.$T)(_el$107, function () {
       return presets[3].title;
     });
 
-    (0,web/* insert */.$T)(_el$108, function () {
+    (0,web/* insert */.$T)(_el$109, function () {
       return presets[4].title;
     });
 
-    (0,web/* insert */.$T)(_el$111, function () {
+    (0,web/* insert */.$T)(_el$112, function () {
       return presets[3].title;
     });
 
-    (0,web/* insert */.$T)(_el$113, function () {
+    (0,web/* insert */.$T)(_el$114, function () {
       return presets[4].title;
     });
 
-    (0,web/* insert */.$T)(_el$115, function () {
+    (0,web/* insert */.$T)(_el$116, function () {
       return presets[5].title;
     });
 
-    (0,web/* insert */.$T)(_el$117, function () {
+    (0,web/* insert */.$T)(_el$118, function () {
       return presets[2].title;
     });
 
-    (0,web/* insert */.$T)(_el$119, function () {
+    (0,web/* insert */.$T)(_el$120, function () {
       return presets[5].title;
     });
 
-    (0,web/* insert */.$T)(_el$120, (0,solid/* createComponent */.LM)(solid/* For */.U2, {
+    (0,web/* insert */.$T)(_el$121, (0,solid/* createComponent */.LM)(solid/* For */.U2, {
       each: presets,
       children: function children(preset) {
         return (0,solid/* createComponent */.LM)(Grid, {
@@ -3454,9 +3455,9 @@ function Gallery_3() {
     return parsePreset(preset);
   });
   return [_tmpl$13.cloneNode(true), _tmpl$14.cloneNode(true), function () {
-    var _el$123 = _tmpl$15.cloneNode(true);
+    var _el$124 = _tmpl$15.cloneNode(true);
 
-    (0,web/* insert */.$T)(_el$123, (0,solid/* createComponent */.LM)(solid/* For */.U2, {
+    (0,web/* insert */.$T)(_el$124, (0,solid/* createComponent */.LM)(solid/* For */.U2, {
       each: presets,
       children: function children(preset) {
         return (0,solid/* createComponent */.LM)(Grid, {
@@ -3465,11 +3466,10 @@ function Gallery_3() {
       }
     }));
 
-    return _el$123;
+    return _el$124;
   }(), function () {
-    var _el$124 = _tmpl$16.cloneNode(true),
-        _el$125 = _el$124.firstChild,
-        _el$126 = _el$125.nextSibling,
+    var _el$125 = _tmpl$16.cloneNode(true),
+        _el$126 = _el$125.firstChild,
         _el$127 = _el$126.nextSibling,
         _el$128 = _el$127.nextSibling,
         _el$129 = _el$128.nextSibling,
@@ -3478,46 +3478,47 @@ function Gallery_3() {
         _el$132 = _el$131.nextSibling,
         _el$133 = _el$132.nextSibling,
         _el$134 = _el$133.nextSibling,
-        _el$135 = _el$134.nextSibling;
+        _el$135 = _el$134.nextSibling,
+        _el$136 = _el$135.nextSibling;
 
-    (0,web/* insert */.$T)(_el$125, function () {
+    (0,web/* insert */.$T)(_el$126, function () {
       return presets[0].title;
     });
 
-    (0,web/* insert */.$T)(_el$127, function () {
+    (0,web/* insert */.$T)(_el$128, function () {
       return presets[1].title;
     });
 
-    (0,web/* insert */.$T)(_el$133, function () {
+    (0,web/* insert */.$T)(_el$134, function () {
       return 10 * presets[0].summary.production.lastOptimalCycle;
     });
 
-    (0,web/* insert */.$T)(_el$135, function () {
+    (0,web/* insert */.$T)(_el$136, function () {
       return 10 * presets[1].summary.production.lastOptimalCycle;
     });
 
-    return _el$124;
+    return _el$125;
   }(), function () {
-    var _el$136 = _tmpl$17.cloneNode(true),
-        _el$137 = _el$136.firstChild,
-        _el$138 = _el$137.nextSibling,
+    var _el$137 = _tmpl$17.cloneNode(true),
+        _el$138 = _el$137.firstChild,
         _el$139 = _el$138.nextSibling,
         _el$140 = _el$139.nextSibling,
         _el$141 = _el$140.nextSibling,
         _el$142 = _el$141.nextSibling,
         _el$143 = _el$142.nextSibling,
         _el$144 = _el$143.nextSibling,
-        _el$145 = _el$144.nextSibling;
+        _el$145 = _el$144.nextSibling,
+        _el$146 = _el$145.nextSibling;
 
-    (0,web/* insert */.$T)(_el$137, function () {
+    (0,web/* insert */.$T)(_el$138, function () {
       return presets[2].title;
     });
 
-    (0,web/* insert */.$T)(_el$145, function () {
+    (0,web/* insert */.$T)(_el$146, function () {
       return 10 * (presets[2].summary.production.products.length - 1);
     });
 
-    return _el$136;
+    return _el$137;
   }()];
 }
 // EXTERNAL MODULE: ./node_modules/solid-js/store/dist/store.js
