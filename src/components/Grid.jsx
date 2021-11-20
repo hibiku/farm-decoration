@@ -474,7 +474,16 @@ export function Gallery_2() {
     return (
         <>
             <div class="example">
-                <p><b>Example:</b> Consider the minimal layouts below that consist entirely of <b>Tip-Top Balloon Shop</b> buildings, which have a base production rate of <b>35</b> Waru per 10 mins, and receive an <em>average</em> production rate bonus of <b>5</b> Waru per 10 mins for each neighboring road.</p>
+                <p><b>Example:</b> Consider the minimal layouts below that consist entirely of <b>Tip-Top Balloon Shop</b> buildings, which have a base production rate of <b>35</b> Waru per 10 mins. While these buildings can be neighbored by up to <b>12</b> roads, they receive production rate bonuses only up to <b>7</b> neighboring roads, and in the following amounts:</p>
+                <ol>
+                    <li><b>5</b> Waru per 10 mins for the <b>first</b> neighboring road</li>
+                    <li><b>6</b> Waru per 10 mins for the <b>second</b> neighboring road</li>
+                    <li><b>6</b> Waru per 10 mins for the <b>third</b> neighboring road</li>
+                    <li><b>5</b> Waru per 10 mins for the <b>fourth</b> neighboring road</li>
+                    <li><b>6</b> Waru per 10 mins for the <b>fifth</b> neighboring road</li>
+                    <li><b>6</b> Waru per 10 mins for the <b>sixth</b> neighboring road</li>
+                    <li><b>1</b> Waru per 10 mins for the <b>seventh</b> neighboring road</li>
+                </ol>
                 <p>In <b>{presets[0].title}</b> and <b>{presets[1].title}</b>, roads are underutilized. These layouts can be improved by positioning buildings further apart from each other, as shown in <b>{presets[2].title}</b>, <b>{presets[3].title}</b> and <b>{presets[4].title}</b>.</p>
                 <p>In <b>{presets[3].title}</b>, <b>{presets[4].title}</b> and <b>{presets[5].title}</b>, roads are overutilized. These layouts can be improved by positioning buildings closer to each other, as shown in <b>{presets[2].title}</b>. In particular, <b>{presets[5].title}</b> shows how using roads in excess can make production rates worse compared to not using roads at all.</p>
                 <div class="gallery">
