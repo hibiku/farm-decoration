@@ -1,6 +1,6 @@
 import { batch, createMemo, onMount } from "solid-js";
 import { createStore } from "solid-js/store";
-import { objects, minBeauty, maxBeauty, beautyProps, maxPaths, effectiveMaxPathsWaru, networkWaru, aufhebenWaru } from "../data.js";
+import { objects, minBeauty, maxBeauty, beautyDetails, maxPaths, effectiveMaxPathsWaru, networkWaru, aufhebenWaru } from "../data.js";
 
 function Building() {
     let data;
@@ -50,7 +50,7 @@ function Building() {
         return Object.fromEntries(buildingNames.map(name => {
             const { level, order, tiles, waru, banked, decor, quantity } = objects.building.data[name];
             const totalWaru = waru > 0 ? waru + networkWaru(waru, Math.min(maxPaths(order), table.paths)) + (table.useAufheben ? aufhebenWaru : 0) : waru;
-            const totalBanked = banked > 0 ? banked + beautyProps(table.totalBeauty).banked : banked;
+            const totalBanked = banked > 0 ? banked + beautyDetails(table.totalBeauty).banked : banked;
             return [name, {
                 name,
                 level,

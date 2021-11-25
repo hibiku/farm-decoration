@@ -1,7 +1,7 @@
 import { onMount } from "solid-js";
 import { Chart, LineElement, PointElement, LineController, CategoryScale, LinearScale, Tooltip } from "chart.js";
 Chart.register(LineElement, PointElement, LineController, CategoryScale, LinearScale, Tooltip);
-import { maxBeauty, beautyThresholds, beautyProps } from "../data.js";
+import { maxBeauty, beautyThresholds, beautyDetails } from "../data.js";
 
 function Beauty() {
     let canvas;
@@ -26,7 +26,7 @@ function Beauty() {
                     tooltip: {
                         callbacks: {
                             afterBody: (tooltipItems) => {
-                                const { next, choices, banked, discount, visit } = beautyProps(tooltipItems[0].raw);
+                                const { next, choices, banked, discount, visit } = beautyDetails(tooltipItems[0].raw);
                                 return `Points to next threshold: ${Number(next).toLocaleString()}\nCombine Result Choices: +${choices}%\nBuilding Max Waru Capacity: +${banked}\nShop Discount: ${discount}%\nSpecial Merchant Visit: +${visit}%`;
                             }
                         }

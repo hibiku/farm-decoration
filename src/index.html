@@ -23,7 +23,7 @@
                             <li><a href="#building-decor-choice">Which buildings/decors should I be using?</a></li>
                             <li><a href="#road-use">Should I consider using roads?</a></li>
                             <li><a href="#positioning">How should I be positioning roads in relation to buildings/decors?</a></li>
-                            <li><a href="#unconsumed-tile-requirement">Why am I unable to use additional buildings/decors?</a></li>
+                            <li><a href="#free-tile-requirement">Why am I unable to use additional buildings/decors?</a></li>
                             <li><a href="#aufheben-effect">What is the Aufheben monster's effect?</a></li>
                         </ol>
                     </li>
@@ -185,7 +185,7 @@
                             <p class="example"><b>Example:</b> Consider a farm that consists entirely of <b>Tip-Top Balloon Shop</b> buildings, which have a base production time of <b>860</b> mins. If you regularly harvest Waru from your buildings at an interval longer than this time (which may differ <a href=#building-decor-context>depending on the context</a>), you will be better off without using roads for their network effects.</p>
                         </ul>
                         <p>If your use case meets the above criteria, and you are <a href="#positioning">positioning roads strategically</a> in relation to your buildings, road network effects can allow you to make fuller use of the potential of your buildings.</p>
-                        <p>In addition to reducing the number of buildings needed to meet your production requirements, padding your buildings with roads can also help to resolve any strips of single tiles created by the evenness/oddness of your buildings, as well as to meet the <a href="#unconsumed-tile-requirement">unconsumed tile requirement</a>.</p>
+                        <p>In addition to reducing the number of buildings needed to meet your production requirements, padding your buildings with roads can also help to resolve any strips of single tiles created by the evenness/oddness of your buildings, as well as to meet the <a href="#free-tile-requirement">free tile requirement</a>.</p>
                     </section>
                     <section id="positioning">
                         <h3>How should I be positioning roads in relation to buildings/decors?</h3>
@@ -228,15 +228,15 @@
                         </ul>
                         <p>For examples of complete layouts that make use of road network effects, check out the <a href="#practical-layouts">Practical layouts</a> section below.</p>
                     </section>
-                    <section id="unconsumed-tile-requirement">
+                    <section id="free-tile-requirement">
                         <h3>Why am I unable to use additional buildings/decors?</h3>
-                        <p>Farms have an unconsumed tile requirement, which is calculated as follows:</p>
+                        <p>Farms have a free tile requirement, which is calculated as follows:</p>
                         <dl class="formula">
-                            <dt><var>e</var> = 1 + <var>m</var></dt>
+                            <dt><var>f</var> = 1 + <var>m</var></dt>
                             <dd>where:</dd>
                             <dd>
                                 <ul>
-                                    <li><var>e</var> is the number of tiles that cannot be occupied by any buildings/decors</li>
+                                    <li><var>f</var> is the number of tiles that cannot be occupied by any buildings/decors</li>
                                     <li><var>m</var> is the number of monster slots opened on your farm</li>
                                 </ul>
                             </dd>
